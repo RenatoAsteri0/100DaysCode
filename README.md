@@ -10,7 +10,7 @@ Conhecer um pouco de todas as demandas de técnologia que o python pode ajudar, 
 
 | Dia | Tema/Descrição | Link |
 |-----|----------------|------|
-| 01  | Print, Input, Function `input()` | [day_01](day_01) |
+| 01  | Print, Input, Strings manupulation|
 | 02  | Variáveis, Operações matemáticas, f-strings | [day_02](day_02) |
 | 20  | Snake Game com `turtle` e OOP | [day_20](day_20_snake_game) |
 | 23  | Jogo do semáforo com colisões `turtle` | [day_23](day_23_turtle_crossing_start) |
