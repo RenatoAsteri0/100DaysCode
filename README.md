@@ -8,8 +8,8 @@ Conhecer um pouco de todas as demandas de técnologia que o python pode ajudar, 
 
 📚 Estrutura dos dias
 
-| Dia | Tema/Descrição | Link |
-|-----|----------------|------|
+| Dia | Tema/Descrição |
+|-----|----------------|
 | 01  | Print, Input, Strings manupulation|
 | 02  | Variáveis, Operações matemáticas, f-strings | [day_02](day_02) |
 | 20  | Snake Game com `turtle` e OOP | [day_20](day_20_snake_game) |
