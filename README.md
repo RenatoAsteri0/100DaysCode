@@ -11,8 +11,19 @@ Conhecer um pouco de todas as demandas de técnologia que o python pode ajudar, 
 | Dia | Tema/Descrição |
 |-----|----------------|
 | 01 - 19  | Básico de algoritmos: Print, Input, Strings manupulation, Tipo de dados, if-elif-else, Listas, Tuplas, Funções, Loops, OOP|
-| 02  | Tipo de dados, Operações matemáticas, f-strings | [day_02](day_02) |
-| 20  | Snake Game com `turtle` e OOP | [day_20](day_20_snake_game) |
-| 23  | Jogo do semáforo com colisões `turtle` | [day_23](day_23_turtle_crossing_start) |
-| 25  | Pandas, leitura de CSVs | [day_25](day_25_csv_data_pandas) |
-| 28  | GUI Pomodoro Timer com `Tkinter` | [day_28](day_28_tkinter_dynamic_pomodoro_gui) |
+| 15  | `Um dos projetos mais legais` maquina de cafe OOP|
+| 20-21  | Snake Game com `turtle` e OOP|
+| 22  | Pong Game com paddles `turtle`|
+| 22  | Pong Game com paddles `turtle`|
+| 23  | Jogo do semáforo com colisões `turtle`|
+| 24  | Manipulação de Files e Directories|
+| 25  | `Pandas`, leitura de CSVs, game guess states USA|
+| 26  | List e Dict Comprehension, game NATO|
+| 27  | Tkinter, arg e kwarg|
+| 28  | GUI Pomodoro Timer com `Tkinter`|
+| 29  | Password GUI com Tkinter|
+
+✅ Status atual:
+✅ Dias concluídos: 28
+🔄 Em andamento: Dia 29
+📌 Último projeto: Pomodoro GUI com Tkinter
