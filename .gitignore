@@ -1,0 +1,32 @@
+# Ignorar ambientes virtuais criados em cada subpasta
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+
+# Arquivos de configuração temporários
+*.env
+.env
+*.log
+*.sqlite3
+*.db
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Pastas de cache
+.cache/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# Notebooks Jupyter (se houver)
+.ipynb_checkpoints/

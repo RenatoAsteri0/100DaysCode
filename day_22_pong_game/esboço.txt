@@ -1,0 +1,31 @@
+jogo do pong
+
+Classes:
+    1 - jogadores (Turtles barras)
+    2 - Tela (Turtles screen)
+    3 - Score
+    4 - Bola
+
+Arquivos:
+    main = Primeiro será montada a tela com as devidas atualizações e dimenções e será aonde vou chamar as classes, tela preta. Terão 2 jogadores.
+No final sera adicionado o While que so para se um jogador perder
+    jogadores = a classe jogador sera feita com base do dic Turtle. Os jogadores serão espelhados (turtle.goto). Tera funcoes de mover pra cima e baixo,
+cor: branca
+    Score = pontuação no centro acima da tela em branco, essa pontuação será individual para cada jogador
+    Bola = Sera uma bola branca.
+
+
+
+
+    oque a professora disse: https://www.udemy.com/course/100-days-of-code/learn/lecture/20414753?start=120#overview
+
+    jogo do pong
+    
+    1 - Criar a tela
+    2 - Criar e mover o jogador
+    3 - Criar outro jogador
+    4 - Criar a bola e fazer move-learn
+    5 - Detectar colisão com a parede
+    6 - Detectar colisão com o jogador
+    7 - Detectar quando o jogador perder
+    8 - Score continuo
