@@ -25,6 +25,6 @@ Conhecer um pouco de todas as demandas de técnologia que o python pode ajudar, 
 | 30  | Adicionar leitura json - Password ManagerGUI|
 
 ✅ Status atual:
-✅ Dias concluídos: 29
-🔄 Em andamento: Dia 30
+✅ Dias concluídos: 30
+🔄 Em andamento: Dia 31
 📌 Último projeto: Password ManagerGUI
