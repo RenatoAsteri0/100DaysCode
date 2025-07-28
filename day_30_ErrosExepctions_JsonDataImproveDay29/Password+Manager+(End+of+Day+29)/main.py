@@ -39,7 +39,7 @@ def save():
     if len(website) == 0 or len(password) == 0:
         messagebox.showinfo(title="Oops", message="Please make sure you haven't left any fields empty.")
     else:
-        try:
+        '''try:
             with open("data.json", "r") as data_file:
                 data = json.load(data_file)
                 data.update(novos_dados)
@@ -48,7 +48,42 @@ def save():
         except FileNotFoundError:
             with open("data.json", 'w') as data_file:
                 json.dump(novos_dados, data_file, indent=4)
-            save()
+            save()'''
+        try:
+            with open("data.json", "r") as data_file:
+                data = json.load(data_file)
+        except FileNotFoundError:
+            with open("data.json", 'w') as data_file:
+                json.dump(novos_dados, data_file, indent=4)
+        else:
+            data.update(novos_dados)
+            with open("data.json", 'w') as data_file:
+                json.dump(data, data_file, indent=4)
+        finally:
+            website_entry.delete(0, 'end')
+            password_entry.delete(0, 'end')
+
+def seach_data():
+    website = website_entry.get()
+    email = email_entry.get()
+
+    try:
+        with open("data.json", "r") as data_file:
+            data = json.load(data_file)
+            website_json = data[website]
+    except FileNotFoundError:
+        messagebox.showwarning(title='Error', message='Arquivo não encontrado')
+    except KeyError:
+        messagebox.showwarning(title='Error', message='Site não cadastrado')
+        print('Nao existe o site')
+    else:
+        email_json = data[website]['email']
+        password_json = data[website]['password']
+
+        if email == email_json:
+            messagebox.showinfo(title=website_json, message=f'Email: {email_json}\nPassword: {password_json}')
+        else:
+            messagebox.showwarning(title='Error', message='Email não cadastrado')
 
 # ---------------------------- UI SETUP ------------------------------- #
 
@@ -71,7 +106,7 @@ password_label.grid(row=3, column=0)
 
 #Entries
 website_entry = Entry(width=35)
-website_entry.grid(row=1, column=1, columnspan=2)
+website_entry.grid(row=1, column=1)
 website_entry.focus()
 email_entry = Entry(width=35)
 email_entry.grid(row=2, column=1, columnspan=2)
@@ -80,9 +115,12 @@ password_entry = Entry(width=21)
 password_entry.grid(row=3, column=1)
 
 # Buttons
-generate_password_button = Button(text="Generate Password", command=generate_password)
-generate_password_button.grid(row=3, column=2)
+password_button = Button(text="Generate Password", command=generate_password)
+password_button.grid(row=3, column=2)
 add_button = Button(text="Add", width=36, command=save)
 add_button.grid(row=4, column=1, columnspan=2)
+
+search_button = Button(text='Search', command=seach_data)
+search_button.grid(row=1, column=2)
 
 window.mainloop()
