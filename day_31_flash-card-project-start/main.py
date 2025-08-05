@@ -3,6 +3,7 @@ from tkinter import Canvas, Tk, PhotoImage, Button
 import pandas as pd
 import random
 
+
 BACKGROUND_COLOR = "#B1DDC6"
 FONT_LANGUAGE = ('Arial', 40, 'italic')
 FONT_TRADUCAO = ('Arial', 60, 'bold')
@@ -18,13 +19,18 @@ def generate_word():
     canvas.itemconfig(language_text, text='French', fill='black')
     canvas.itemconfig(traducao_text, text=indice_aleatorio['French'],fill='black')
     canvas.itemconfig(background_canvas, image=img_card_front)
-    ticket_id = window.after(3000, func=get_translate)
 
 def get_translate():
     canvas.itemconfig(language_text,text='English',fill='white')
     canvas.itemconfig(traducao_text, text=indice_aleatorio['English'], fill='white')
     canvas.itemconfig(background_canvas, image=img_card_back)
 
+def is_known():
+    data_dict.remove(indice_aleatorio)
+    print(len(data_dict))
+    data = pd.DataFrame(indice_aleatorio)
+    data.to_csv('data/word_to_learning.csv')
+    generate_word()
 
 #janela
 window = Tk()
@@ -53,7 +59,7 @@ erro.grid(row=1, column=0)
 #botao acertou
 acertou = Button()
 img_acertou_button = PhotoImage(file="images/right.png")
-acertou.config(image=img_acertou_button, command=generate_word)
+acertou.config(image=img_acertou_button, command=is_known)
 acertou.grid(row=1, column=1)
 generate_word()
 window.mainloop()
