@@ -1,13 +1,7 @@
-import random
-import random
-
 import pandas as pd
-def somar(num,num1):
-    return num + num1
-
-somas = (map(somar,(2,3),(1,3)))
-print(list(somas))
-
-data = pd.read_csv('data/french_words.csv')
-data_dict = data.to_dict()
-print(random.choice(data_dict))
+df = pd.read_excel('backups_programados.xlsx')
+itens = df.to_dict('records')
+for item in itens:
+    if item['Status'] != 'OK':
+        print(f"[ALERTA] Procedimento: {item['Procedimento']} | Sistema: {item['Sistema']}")
+        print(f"Responsável: {item['Responsável']} | Data: {item['Data Esperada']}\n")
