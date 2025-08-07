@@ -23,8 +23,9 @@ Conhecer um pouco de todas as demandas de técnologia que o python pode ajudar, 
 | 28  | GUI Pomodoro Timer com `Tkinter`|
 | 29  | Password GUI com Tkinter|
 | 30  | Adicionar leitura json - Password ManagerGUI|
+| 31  | flashcards + pandas + tkinter|
 
 ✅ Status atual:
-✅ Dias concluídos: 30
-🔄 Em andamento: Dia 31
-📌 Último projeto: Password ManagerGUI
+✅ Dias concluídos: 31
+🔄 Em andamento: Dia 32
+📌 Último projeto: flashcards + pandas + tkinter
