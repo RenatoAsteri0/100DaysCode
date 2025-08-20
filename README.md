@@ -24,6 +24,8 @@ Conhecer um pouco de todas as demandas de técnologia que o python pode ajudar, 
 | 29  | Password GUI com Tkinter|
 | 30  | Adicionar leitura json - Password ManagerGUI|
 | 31  | flashcards + pandas + tkinter|
+| 32  | Enviar felicitações + `pandas` + `smtplib` + `datetime`|
+
 
 ✅ Status atual:
 ✅ Dias concluídos: 31
