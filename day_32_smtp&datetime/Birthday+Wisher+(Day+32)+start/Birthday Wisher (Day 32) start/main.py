@@ -31,7 +31,7 @@ def enviar_aniver_email(motivation):
 
 
 def main():
-    if hoje == "2025-08-16":
+    if hoje == "2025-08-23":
         print('ola')
         frase = generate_random_phase()
         print(frase)

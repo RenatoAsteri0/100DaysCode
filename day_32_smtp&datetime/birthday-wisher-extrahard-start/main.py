@@ -16,22 +16,18 @@ import random
 def check_birthday():
     data = pd.read_csv('birthdays.csv')
     dataframe = pd.DataFrame(data)
-    specific_row = dataframe.iloc[1]
-    print(type(specific_row.day))
+    renato_row = dataframe.loc[dataframe['name'] == 'renato']
+    print(type(f"aniversario: {renato_row.month}/{renato_row.day}"))
 
     hoje = dt.date.today()
-
-    if hoje.month == int(specific_row.month):
-        if hoje.day == int(specific_row.day):
-            return True
-    return False
+    return (hoje.month, hoje.day) == (int(renato_row['month'].iloc[0]), int(renato_row['day'].iloc[0]))
 
 def retruscture_letter():
-    random_letter = random.randint(1,4)
+    random_letter = random.randint(1,3)
     with open(f'letter_templates/letter_{random_letter}.txt') as file:
         lines = file.readlines()
         for line in lines:
-            if line.find('[NAME]') != -1:
+            if '[NAME]' in line:
                 print('name estis')
 
 def main():
