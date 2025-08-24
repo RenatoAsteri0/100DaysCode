@@ -12,6 +12,7 @@
 import pandas as pd
 import datetime as dt
 import random
+import smtplib
 
 def check_birthday():
     data = pd.read_csv('birthdays.csv')
@@ -25,14 +26,30 @@ def check_birthday():
 def retruscture_letter():
     random_letter = random.randint(1,3)
     with open(f'letter_templates/letter_{random_letter}.txt') as file:
-        lines = file.readlines()
-        for line in lines:
-            if '[NAME]' in line:
-                print('name estis')
+        content = file.read().replace('[NAME]', 'Renato')
+        return content
+
+def send_email(message):
+    smtp_server = 'smtp.gmail.com'
+    smtp_port = 587
+    smtp_username = 'renato.asterio2@gmail.com'
+    smtp_password = 'uuum vetj ikaz vlzs'
+    from_addr = 'renato.asterio2@gmail.com'
+    to_addr = 'renato.asterio.ext@ultra.com.br'
+    print(message)
+    with smtplib.SMTP(host=smtp_server, port=smtp_port) as connection:
+        connection.starttls()
+        connection.login(user=smtp_username, password=smtp_password)
+        connection.sendmail(
+            from_addr=from_addr,
+            to_addrs=to_addr,
+            msg=(message)
+        )
 
 def main():
     if check_birthday():
         retruscture_letter()
-        #send_email()
+        send_email(retruscture_letter())
+        print('email enviado')
 
 main()
