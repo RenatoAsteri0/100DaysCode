@@ -1,12 +1,11 @@
 import requests
 
-question_data = []
-data = requests.get('https://opentdb.com/api.php?amount=10&type=boolean')
+parameters = {
+    'amount': 10,
+    'type': 'boolean'
+}
+
+data = requests.get('https://opentdb.com/api.php', params=parameters)
+data.raise_for_status()
 json_format = data.json()
-question_data.append(json_format)
-
-for a in question_data:
-    print(a['results'][0]['category'])
-
-categoria = [item['category'] for item in question_data[0]['results']]
-print(categoria)
+question_data = json_format['results']
