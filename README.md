@@ -25,9 +25,12 @@ Conhecer um pouco de todas as demandas de técnologia que o python pode ajudar, 
 | 30  | Adicionar leitura json - Password ManagerGUI|
 | 31  | flashcards + pandas + tkinter|
 | 32  | Enviar felicitações + `pandas` + `smtplib` + `datetime`|
+| 33  | Criar QUIZ Quotes API `requests`
+| 34  | Continuacao dia 33
+| 35  | Automação alertas SMS do clima com `API`
 
 
 ✅ Status atual:
-✅ Dias concluídos: 31
-🔄 Em andamento: Dia 32
-📌 Último projeto: flashcards + pandas + tkinter
+✅ Dias concluídos: 35
+🔄 Em andamento: Dia 36
+📌 Último projeto: API SMS + API CLIMA
