@@ -13,5 +13,5 @@ if sheet_data[0]['iataCode'] == '':
         row['iataCode'] = flighsearch.get_destination_code(row['city'])
     print(f"sheet_data:\n {sheet_data}")
 
-    data_manager.destination_data = sheet_data
-    data_manager.put_sheet_data()
+    #data_manager.destination_data = sheet_data
+    #data_manager.put_sheet_data()
