@@ -12,7 +12,7 @@ class DataManager:
         self.destination_data = {}
 
     def get_sheed_data(self):
-        response = requests.get(url=SHEETY_PRICES_ENDPOINT, headers=self.headers)
+        response = requests.get(url=SHEETY_PRICES_ENDPOINT, headers=self.headers, verify=False)
         data = response.json()
         self.destination_data = data['prices']
         return self.destination_data
@@ -24,5 +24,6 @@ class DataManager:
                     'iataCode': city['iataCode']
                 }
             }
-            response = requests.put(f"{SHEETY_PRICES_ENDPOINT}/{city['id']}", headers=self.headers, json=new_data)
+            response = requests.put(f"{SHEETY_PRICES_ENDPOINT}/{city['id']}", headers=self.headers, json=new_data,
+                                    verify=False)
             print(response.text)
