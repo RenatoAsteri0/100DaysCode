@@ -28,6 +28,11 @@ Conhecer um pouco de todas as demandas de técnologia que o python pode ajudar, 
 | 33  | Criar QUIZ Quotes API `requests`
 | 34  | Continuacao dia 33
 | 35  | Automação alertas SMS do clima com `API`
+| 36  | Trading news Alert SMS API from `TWILIO`
+| 37  | Tracking Habits API using `PIXELA`
+| 38  | Tracking Habits API using `PIXELA` + `GoogleSheets`
+| 39  | Fight Deal Finder API `SMS`
+| 40  | Fligh Deal Finder API Club `SMS`
 
 
 ✅ Status atual:
