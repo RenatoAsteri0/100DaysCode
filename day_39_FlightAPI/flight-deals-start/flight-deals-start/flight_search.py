@@ -3,10 +3,6 @@ from dotenv import load_dotenv
 import requests
 from amadeus import Client, ResponseError
 
-TOKEN_ENDPOINT_AUTH = 'https://test.api.amadeus.com/v1/security/oauth2/token'
-TOKEN_ENDPOINT_CITIES = 'https://test.api.amadeus.com/v1/reference-data/locations/cities'
-TOKEN_ENDPOINT_FLIGHT = 'https://test.api.amadeus.com/v2/shopping/flight-offers'
-
 load_dotenv()
 class FlightSearch(Client):
     #This class is responsible for talking to the Flight Search API.
