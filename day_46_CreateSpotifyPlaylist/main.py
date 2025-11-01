@@ -123,7 +123,7 @@ def create_playlist(user_id, token_playlist):
         print('playlist criada com sucesso')
         print(response)
         print(response.text)
-        print(response.url)
+        print(response)
     else:
         print('falha')
         print(response)
