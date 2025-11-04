@@ -33,7 +33,7 @@ preco_float = float(preco)
 
 smtp_server = 'smtp.gmail.com'
 smtp_port = 465
-smtp_password = 'jiif stoo bcax lzin'
+smtp_password = ''
 from_addr = 'renato.asterio2@gmail.com'
 to_addr = 'renato.asterio2@gmail.com'
 subject = 'Amazon Price Alert'
