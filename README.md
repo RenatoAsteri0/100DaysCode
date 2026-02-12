@@ -32,10 +32,23 @@ Conhecer um pouco de todas as demandas de técnologia que o python pode ajudar, 
 | 37  | Tracking Habits API using `PIXELA`
 | 38  | Tracking Habits API using `PIXELA` + `GoogleSheets`
 | 39  | Fight Deal Finder API `SMS`
-| 40  | Fligh Deal Finder API Club `SMS`
+| 40 - 44  | Fligh Deal Finder API Club `SMS`
+| 45  | Fundamentals `of` BS4
+| 46  | Spotify `API` Create a Playlist `Very challenging`
+| 47  | Price alert Amazon products
+| 48  | Try a simple Selenium
+| 49  | Automate my Excercices `selenium`
+| 50  | Tinder automate Date
+| 51  | Internet test Send through Twitter
+| 52  | Instagram followers `selenium`
+| 53  | Project Book a cheeper room
+| 54  | Fundamentals `of` Flask
+| 55  | Guess a number validate in screen `Flask`
+| 56  | Starting with HTML and CSS in Flask
+| 57  | `Build` a Blog site in Flask
 
 
-✅ Status atual:
-✅ Dias concluídos: 35
-🔄 Em andamento: Dia 36
-📌 Último projeto: API SMS + API CLIMA
+
+✅ Dias concluídos: 57
+🔄 Em andamento: Dia 58
+📌 Último projeto: `Build` a Blog site in Flask
